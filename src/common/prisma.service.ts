@@ -3,7 +3,7 @@ import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
-import { Prisma, PrismaClient } from '../../generated/prisma';
+import { Prisma, PrismaClient } from '@prisma/client';
 
 @Injectable()
 export class PrismaService
