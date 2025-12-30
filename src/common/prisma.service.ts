@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { Logger } from 'winston';
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
-import { Prisma, PrismaClient } from '../../generated/prisma';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
+import { Prisma, PrismaClient } from '../../generated/prisma';
 
 @Injectable()
 export class PrismaService
